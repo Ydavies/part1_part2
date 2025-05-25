@@ -10,4 +10,23 @@ console.log("Now we will sort the array.");
 myArray.sort(function (a, b) {
   return a - b;
 });
-console.log("Sorted: " + myArray);
+console.log("Sorted: " + myArray);  
+
+
+// Adding numbers in 19, 23, 30
+console.log("Now we will add numbers 19, 23, 30 into the array.");
+/*At first when i tried to add the numbers onto the beginning of the array using .splice it kept overwriting the 3. I could'nt work out what the error was and thought i may have missed something.
+upon doing some googling trying to find a solution i came to the conclusion of just adding it onto the end, which worked. */
+
+// Afterwards i was watching the last class and realised we covered the .push line.
+// Adding the numbers 19, 23, 30
+myArray.push("19", "23", "30");
+/* When i tried to add the 3 numbers into position 12,13,14 it kept on adding the 3rd number into the array, which is 14 in this case. I am not sure why but when i delete the 14 it seems to work as intended. */
+
+// /Sorting the new array
+myArray.sort(function (a, b) {
+  return a - b;
+});
+console.log("3 new numbers: " + myArray);
+
+
