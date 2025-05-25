@@ -30,3 +30,9 @@ myArray.sort(function (a, b) {
 console.log("3 new numbers: " + myArray);
 
 
+// Removing 2 numbers from the array, 8 and 31.
+console.log('Now we will remove 2 numbers, "8" and "31"');
+//This command will remove it from the location of 2 and 10 of the sorted array.
+myArray.splice(2, 1);
+myArray.splice(10, 1);
+console.log("2 Removed Numbers: " + myArray);
