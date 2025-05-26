@@ -18,3 +18,7 @@ console.log(myMovie);
 // Change the rating to 4
 myMovie.rating = 4;
 console.log(myMovie);
+
+// Remove the Summary property
+delete myMovie.summary;
+console.log(myMovie);
