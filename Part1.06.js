@@ -23,3 +23,12 @@ console.log(myArray);
   }
 return found;
 }
+
+// Calling the function
+const result = sequentialSearch(myArray, Result);
+// output the result
+if(result == -1){
+  console.log(`The key of ${Result} was not found`);
+}else{
+  console.log(`The key of ${Result} was found at index ${result}`);
+}
